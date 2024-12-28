@@ -84,6 +84,7 @@
     </Compile>
     <Compile Include="Portafolio.Master.cs">
       <DependentUpon>Portafolio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Portafolio.Master.designer.cs">
       <DependentUpon>Portafolio.Master</DependentUpon>
@@ -100,7 +101,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Mail\Mail.csproj">
+      <Project>{a6ff4a24-37cf-4a90-8f10-ec534ac2080a}</Project>
+      <Name>Mail</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
