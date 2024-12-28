@@ -1,0 +1,113 @@
+﻿* {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navbar {
+    justify-content: center;
+    font-size: 30px;
+}
+
+.navItem {
+    margin: 10px;
+}
+
+#presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgp {
+    width: 300px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.presentacion {
+    margin: 10px;
+    transition: 0.5s;
+    width: 650px;
+}
+
+#estudios {
+    background-color: #F8FAFC; 
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.titulo-principal {
+    padding: 15px;
+}
+
+.div-conocimientos {
+    padding:20px;
+}
+
+.item-conocimientos {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.imgConocimientos {
+    width:250px;
+}
+
+.item-habilidades {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgHabilidades {
+    width: 150px;
+}
+
+#proyectos {
+    background-color: #FDF7F4;
+}
+
+.div-proyectos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item-proyectos {
+    width: 550px;
+}
+
+.img-proyectos {
+    height:300px;
+}
+
+.btn-proyectos {
+    background-color: #B1F0F7;
+}
+
+#contacto {
+    background-color: #FFE3E3;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FCFAEE;
+}
+
+.div-footer{
+    display:flex;
+    justify-content: space-around;
+}
+
+.img-footer {
+    padding: 15px;
+    width: 150px;
+}
