@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Portafolio.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Portafolio.Default" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -6,14 +7,14 @@
         <section id="presentacion">
             <div class="d-inline-flex gap-1">
                 <a class="" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <img class="imgp" src="https://www.pngitem.com/pimgs/m/146-1468281_profile-icon-png-transparent-profile-picture-icon-png.png"/>
+                    <img class="imgp" src="https://www.pngitem.com/pimgs/m/146-1468281_profile-icon-png-transparent-profile-picture-icon-png.png" />
                 </a>
             </div>
             <div class="collapse presentacion" id="collapseExample">
                 <div class="card card-body">
                     Hola me llamo Diego, bienvenido a mi portafolio, aquí podras ver mi trayectoria educativa, así como tambien conoceras los proyectos en los que reflejo mis conocimientos y lo aprendido a traves de este viaje el cual comenzo por el gusto a la tecnologia y innovacion. Adicional te dejo un apartado donde puedes contactarme y conocer mis redes como Linkedin y GitHub.
                 </div>
-            </div>            
+            </div>
         </section>
         <section id="estudios">
             <h3 class="titulo titulo-principal">Mis conocimientos...</h3>
@@ -94,8 +95,22 @@
         </section>
         <section id="contacto">
             <h3 class="titulo titulo-principal">Contactame</h3>
-            <div class="">
-
+            <div class="form-Contacto">
+                <div class="item-Contacto">
+                    <h5 class="titulo">Direccion de email</h5>
+                    <asp:TextBox ID="txbEmail" CssClass="tb-Contacto" TextMode="Email" runat="server"></asp:TextBox>
+                </div>
+                <div class="item-Contacto">
+                    <h5 class="titulo">Asunto</h5>
+                    <asp:TextBox ID="txbAsunto" CssClass="tb-Contacto" runat="server"></asp:TextBox>
+                </div>
+                <div class="item-Contacto">
+                    <h5 class="titulo">Mensaje</h5>
+                    <asp:TextBox ID="txbMensaje" CssClass="tb-Contacto" TextMode="MultiLine" runat="server"></asp:TextBox>
+                </div>
+                <div class="item-Contacto">
+                    <asp:Button ID="btnEnviar" OnClick="btnEnviar_Click" CssClass="btn btn-proyectos" runat="server" Text="Enviar" />
+                </div>
             </div>
         </section>
     </main>

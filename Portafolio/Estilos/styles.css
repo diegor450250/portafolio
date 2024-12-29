@@ -96,6 +96,23 @@
     background-color: #FFE3E3;
 }
 
+.form-Contacto {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.item-Contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.tb-Contacto {
+    width:40%;
+}
+
 footer {
     display: flex;
     justify-content: center;

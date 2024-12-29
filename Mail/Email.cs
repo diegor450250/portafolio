@@ -16,7 +16,7 @@ namespace Mail
         public Email()
         {
             server = new SmtpClient();
-            server.Credentials = new NetworkCredential("portafoliodra@gmail.com", "portafolio123");
+            server.Credentials = new NetworkCredential("portafoliodra@gmail.com", "hrwlbglwnqjfpimw");
             server.EnableSsl = true;
             server.Port = 587;
             server.Host = "smtp.gmail.com";
@@ -25,7 +25,8 @@ namespace Mail
         public void generarCorreo(string Asunto, string Mensaje, string Email)
         {
             email = new MailMessage();
-            email.From = new MailAddress(Email);
+            email.From = new MailAddress("portafoliodra@gmail.com");
+            email.ReplyToList.Add(new MailAddress(Email));
             email.To.Add("alfonsodiego048@gmail.com");
             email.Subject = Asunto;
             email.Body = Mensaje;
